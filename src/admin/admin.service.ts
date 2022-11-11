@@ -24,11 +24,6 @@ export class AdminService {
   findOne(id: string) {
     return this.adminModel.findById(id);
   }
-  findByName(name: string) {
-    return this.adminModel.find({
-      $where: name,
-    });
-  }
 
   update(id: string, updateAdminDto: UpdateAdminDto) {
     return this.adminModel.findByIdAndUpdate(

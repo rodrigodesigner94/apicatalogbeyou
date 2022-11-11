@@ -32,10 +32,6 @@ export class AdminController {
   findOne(@Param('id') id: string) {
     return this.adminService.findOne(id);
   }
-  @Get('name')
-  findByName(@Param('name') name: string) {
-    return this.adminService.findByName(name);
-  }
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateAdminDto: UpdateAdminDto) {
