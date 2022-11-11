@@ -6,7 +6,6 @@ import { ProductsModule } from './products/products.module';
 import { CarrosselModule } from './carrossel/carrossel.module';
 import { ClientsModule } from './clients/clients.module';
 import { AdminModule } from './admin/admin.module';
-import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -17,7 +16,6 @@ import { AuthModule } from './auth/auth.module';
     CarrosselModule,
     ClientsModule,
     AdminModule,
-    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -42,9 +42,9 @@ export class AdminController {
   remove(@Param('id') id: string) {
     return this.adminService.remove(id);
   }
-  @UseGuards(AuthGuard('local'))
-  @Post('loginadmin')
-  async login(@Request() req) {
-    return req.adminUser;
-  }
+  // @UseGuards(AuthGuard('local'))
+  // @Post('loginadmin')
+  // async login(@Request() req) {
+  //   return req.adminUser;
+  // }
 }
